@@ -1,0 +1,21 @@
+<section class="contato">
+    <ul>
+        <img 
+        class="avatar" 
+        [src]="avatar" 
+        alt="avatar"
+        [routerLink]="['/perfil-contato', id]">
+        <li>
+            <strong>{{ nome }}</strong>
+        </li>
+        <li>{{ telefone }}</li>
+        <li>
+            <button [routerLink]="['/formulario', id]">
+                <img src="/assets/pencil-square.png" alt="botão-editar">
+            </button>
+            <button [routerLink]="['/perfil-contato', id]">
+                <img src="/assets/trash.png" alt="botão-excluir">
+            </button>
+        </li>
+    </ul>
+</section>
